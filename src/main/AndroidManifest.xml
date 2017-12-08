@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bdk.qr.lib">
+
+    <!--APP发布在GooglePlay的时候其作用，它协助GooglePlay来过滤您的应用程序-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--允许程序访问摄像头进行拍照-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许访问闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!--允许程序振动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--屏幕保持唤醒 不锁屏-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--允许读取设备外部存储,如SD卡上-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--允许程序写入外部存储,如SD卡上写文件-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:allowBackup="true">
+
+        <activity
+            android:name=".activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+</manifest>
