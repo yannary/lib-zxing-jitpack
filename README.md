@@ -1,2 +1,2 @@
 # lib-zxing-jitpack
-lib-zxing-jitpack
+zxing library for jitpack
